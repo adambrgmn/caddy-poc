@@ -3,9 +3,11 @@
 #   reverse_proxy https://caddy-poc-app-4qisupq5ea-lz.a.run.app/
 # }
 
-:{$PORT}
+:{$PORT} {
+  reverse_proxy https://caddy-poc-app-4qisupq5ea-lz.a.run.app/
+}
 
-root * /usr/share/caddy
+# root * /usr/share/caddy
 
-file_server
-templates
+# file_server
+# templates
