@@ -13,7 +13,7 @@ env:
 
 jobs:
   deploy-app:
-    name: Setup, build and deploy
+    name: 'App: Setup, build and deploy'
     runs-on: ubuntu-latest
 
     steps:
@@ -55,7 +55,7 @@ jobs:
             --quiet
 
   deploy-caddy:
-    name: Setup, build and deploy
+    name: 'Caddy: Setup, build and deploy'
     runs-on: ubuntu-latest
 
     steps:

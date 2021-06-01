@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Home: NextPage<Props> = ({ host }) => {
-  return <div>Host: {host}</div>;
+  return <div>App | Host: {host}</div>;
 };
 
 export default Home;
