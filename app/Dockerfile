@@ -1,3 +1,5 @@
+# This image is inspired by https://github.com/vercel/next.js/tree/canary/examples/with-docker
+
 FROM node:14-alpine AS deps
 
 RUN apk add --no-cache libc6-compat
