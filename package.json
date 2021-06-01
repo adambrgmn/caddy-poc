@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p ${PORT:=3000}",
+    "docker:build": "docker build -t nextjs-docker .",
+    "docker:run": "docker run -p 3000:3000 nextjs-docker"
   },
   "dependencies": {
     "next": "10.2.3",
